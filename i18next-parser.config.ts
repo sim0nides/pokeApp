@@ -1,4 +1,5 @@
 import { UserConfig } from 'i18next-parser'
+
 import { languages } from './src/i18n'
 
 const config: UserConfig = {
