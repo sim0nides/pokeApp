@@ -17,8 +17,12 @@
     }
   },
   "lint-staged": {
-    "*.+(ts|tsx|js|jsx)": ["eslint --fix"],
-    "*.+(json|css|md)": ["prettier --write"]
+    "*.+(ts|tsx|js|jsx)": [
+      "eslint --fix"
+    ],
+    "*.+(json|css|md)": [
+      "prettier --write"
+    ]
   },
   "dependencies": {
     "react": "^18.2.0",
