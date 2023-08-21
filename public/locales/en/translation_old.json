@@ -1,0 +1,8 @@
+{
+  "pokeList": {
+    "colHeader": {
+      "name": "Name",
+      "types": "Type"
+    }
+  }
+}

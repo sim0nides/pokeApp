@@ -1,0 +1,28 @@
+{
+  "poke": {
+    "height": "Výška",
+    "baseExperience": "Základná skúsenosť",
+    "weight": "Váha",
+    "abilities": "Schopnosti",
+    "types": "Typy",
+    "name": "Názov"
+  },
+  "pokeDetail": {
+    "notFound": "Oops, niečo sa pokazilo ..."
+  },
+  "common": {
+    "stats": "Štatistiky"
+  },
+  "pokeList": {
+    "noDataFound": "Nenašli sa žiadni pokémoni",
+    "search": {
+      "placeholder": "Vyhľadaj podľa názvu ..."
+    }
+  },
+  "pagination": {
+    "pageInfo": "Strana {{current}} z {{total}}",
+    "button": {
+      "loadMore": "Zobraziť daľšie"
+    }
+  }
+}

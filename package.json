@@ -10,7 +10,8 @@
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "lint:fix": "yarn run lint --fix",
     "format": "prettier --write \"**/*.+(js|jsx|ts|tsx|json|css|md)\"",
-    "locales:extract": "i18next"
+    "locales:extract": "i18next",
+    "gql:generate": "yarn graphql-codegen --verbose"
   },
   "lint-staged": {
     "*.+(ts|tsx|js|jsx)": [
@@ -21,6 +22,10 @@
     ]
   },
   "dependencies": {
+    "@apollo/client": "^3.8.1",
+    "@reduxjs/toolkit": "^1.9.5",
+    "classnames": "^2.3.2",
+    "graphql": "^16.8.0",
     "i18next": "^23.4.4",
     "i18next-browser-languagedetector": "^7.1.0",
     "i18next-http-backend": "^2.2.1",
@@ -28,17 +33,23 @@
     "match-sorter": "^6.3.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-helmet-async": "^1.3.0",
     "react-i18next": "^13.1.2",
+    "react-icons": "^4.10.1",
+    "react-redux": "^8.1.2",
     "react-router-dom": "^6.15.0",
     "sort-by": "^1.2.0"
   },
   "devDependencies": {
+    "@graphql-codegen/cli": "^5.0.0",
+    "@graphql-codegen/client-preset": "^4.1.0",
     "@types/react": "^18.2.15",
     "@types/react-dom": "^18.2.7",
     "@typescript-eslint/eslint-plugin": "^6.0.0",
     "@typescript-eslint/parser": "^6.0.0",
     "@vitejs/plugin-react": "^4.0.3",
     "autoprefixer": "^10.4.15",
+    "dotenv": "^16.3.1",
     "eslint": "^8.45.0",
     "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-prettier": "^5.0.0",
@@ -50,6 +61,7 @@
     "lint-staged": "^14.0.0",
     "postcss": "^8.4.28",
     "prettier": "^3.0.2",
+    "sass": "^1.66.0",
     "tailwindcss": "^3.3.3",
     "typescript": "^5.0.2",
     "vite": "^4.4.5",

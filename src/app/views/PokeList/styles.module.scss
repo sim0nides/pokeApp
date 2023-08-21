@@ -1,0 +1,27 @@
+.table {
+  @apply table-auto w-full text-left;
+
+  thead {
+    @apply uppercase bg-gray-400 text-sm text-gray-700;
+
+    th {
+      @apply py-3 px-6;
+    }
+  }
+
+  tbody {
+    @apply bg-gray-700 text-white;
+
+    tr {
+      @apply hover:bg-gray-600 border-b border-gray-600;
+    }
+
+    td {
+      @apply py-4 px-6;
+    }
+  }
+
+  tfoot {
+    @apply bg-gray-700;
+  }
+}

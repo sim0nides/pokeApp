@@ -1,0 +1,28 @@
+{
+  "poke": {
+    "height": "Height",
+    "baseExperience": "Base experience",
+    "weight": "Weight",
+    "abilities": "Abilities",
+    "types": "Types",
+    "name": "Name"
+  },
+  "pokeDetail": {
+    "notFound": "Oops, something went wrong ..."
+  },
+  "common": {
+    "stats": "Stats"
+  },
+  "pokeList": {
+    "noDataFound": "No pokemons found",
+    "search": {
+      "placeholder": "Search by name ..."
+    }
+  },
+  "pagination": {
+    "pageInfo": "Page {{current}} of {{total}}",
+    "button": {
+      "loadMore": "Load more"
+    }
+  }
+}

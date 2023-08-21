@@ -13,11 +13,11 @@ const detectionOptions: DetectorOptions = {
 }
 
 i18n
-  .use(backend)
   .use(initReactI18next)
+  .use(backend)
   .use(LanguageDetector)
   .init({
-    debug: !import.meta.env.PROD,
+    debug: true,
     fallbackLng: [languages[0], languages[1]],
     detection: detectionOptions
   })
