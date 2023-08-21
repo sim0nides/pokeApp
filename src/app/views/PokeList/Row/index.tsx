@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 
 import PokeSprite from '@/app/components/PokeSprite'
 import PokeType from '@/app/components/PokeType'
+import { normalizeKebabCase } from '@/helpers/formatters'
 
 type RowProps = {
   pokemonId: number
@@ -26,7 +27,7 @@ const Row = ({
             size={'4rem'}
             className="inline-block me-5"
           />
-          {pokemonName}
+          {normalizeKebabCase(pokemonName)}
         </Link>
       </td>
       <td>

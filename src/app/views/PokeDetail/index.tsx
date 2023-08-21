@@ -7,6 +7,7 @@ import { useQuery } from '@apollo/client'
 import PokeSprite from '@/app/components/PokeSprite'
 import { GetPokemonDocument } from '@/gql/graphql'
 import appTitle from '@/helpers/appTitle'
+import { normalizeKebabCase } from '@/helpers/formatters'
 
 import AttributesCard from './AttributesCard'
 import StatsCard from './StatsCard'
@@ -20,7 +21,7 @@ const PokeDetail = () => {
     variables: { id: +id! }
   })
 
-  const pokeName = data?.pokemon_v2_pokemon_by_pk?.name
+  const pokeName = normalizeKebabCase(data?.pokemon_v2_pokemon_by_pk?.name)
   const pokeSprites =
     data?.pokemon_v2_pokemon_by_pk?.pokemon_v2_pokemonsprites?.[0].sprites
   const pokeHeight = data?.pokemon_v2_pokemon_by_pk?.height

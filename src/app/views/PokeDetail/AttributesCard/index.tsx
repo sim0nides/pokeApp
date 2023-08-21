@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next'
 
 import PokeType from '@/app/components/PokeType'
 import Skeleton from '@/app/components/Skeleton'
+import { normalizeKebabCase } from '@/helpers/formatters'
 
 import Item from './Item'
 
@@ -23,7 +24,7 @@ const AttributesCard = ({ loading, ...props }: AttributesCard) => {
   const weight = props.weight != null ? `${props.weight} kg` : '-'
   const baseExperience = props.baseExperience ?? '-'
   const abilities = props.abilities?.length
-    ? props.abilities.map((i) => <p key={i}>{i.replace('-', ' ')}</p>)
+    ? props.abilities.map((i) => <p key={i}>{normalizeKebabCase(i)}</p>)
     : '-'
   const types = props.types?.length
     ? props.types.map((i) => <PokeType key={i} value={i} />)

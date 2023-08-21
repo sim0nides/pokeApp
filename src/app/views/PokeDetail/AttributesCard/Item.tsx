@@ -7,7 +7,7 @@ type ItemProps = {
 }
 
 const Item = ({ label, className, children }: ItemProps) => {
-  className = className ?? 'text-xl text-white capitalize'
+  className = className ?? 'text-xl text-white'
   return (
     <div>
       <label className="text-gray-400 font-normal block mb-1.5">{label}</label>

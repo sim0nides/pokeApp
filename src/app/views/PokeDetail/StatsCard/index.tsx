@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next'
 
 import ProgressBar from '@/app/components/ProgressBar'
 import Skeleton from '@/app/components/Skeleton'
+import { normalizeKebabCase } from '@/helpers/formatters'
 
 interface PokeStats {
   id: number
@@ -34,7 +35,7 @@ const StatsCard = ({ stats, loading }: StatsCardProps) => {
           : stats?.map((i) => (
               <div key={i.id}>
                 <label className="text-gray-800 text-sm font-medium block mb-1.5 capitalize">
-                  {i.name.replace('-', ' ')}
+                  {normalizeKebabCase(i.name)}
                 </label>
                 <ProgressBar percentValue={(i.value * 100) / 200} />
               </div>
